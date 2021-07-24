@@ -98,7 +98,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- Automatic Slideshow Images -->
- <div id="mySlides w3-display-container w3-center">
+ <div id="stage">
 <a><img src="https://cdn.discordapp.com/attachments/861311002683506689/861311098585612318/unknown.png"></a>
 <a><img src="https://cdn.discordapp.com/attachments/861311002683506689/861455516491579392/unknown.png"></a>
 <a><img src="https://cdn.discordapp.com/attachments/861311002683506689/861724204252921876/unknown.png"></a>
@@ -149,7 +149,7 @@ body {font-family: "Lato", sans-serif}
 
   window.addEventListener("DOMContentLoaded", function(e) {
 
-    var stage = document.getElementById("mySlides w3-display-container w3-center");
+    var stage = document.getElementById("stage");
     var fadeComplete = function(e) { stage.appendChild(arr[0]); };
     var arr = stage.getElementsByTagName("a");
     for(var i=0; i < arr.length; i++) {
